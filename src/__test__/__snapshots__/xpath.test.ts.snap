@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Can get element info from block of HTML 1`] = `
+Object {
+  "customPath": "/serviceSubSection(otherParent)/tag(introParagraph)",
+  "elementData": Object {
+    "serviceSubSection": "otherParent",
+    "tag": "introParagraph",
+  },
+  "xpath": "/html/body/div/div[@id=\\"another-better-id\\"]/div[@id=\\"some-unique-id\\"]/div[@class=\\"ASKLJHASDLKJH\\"]/p",
+}
+`;
+
+exports[`Can get element info from block of HTML 2`] = `
+Object {
+  "customPath": "/serviceSubSection(otherParent)/tag(introParagraph)",
+  "elementData": Object {
+    "serviceSubSection": "otherParent",
+    "tag": "introParagraph",
+  },
+  "xpath": "/html/body/div/div[@id=\\"another-better-id\\"]/div[@id=\\"some-unique-id\\"]/div[@class=\\"ASKLJHASDLKJH\\"]/p[1]",
+}
+`;
