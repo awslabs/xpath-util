@@ -16,14 +16,12 @@ export function getXpath(element: HTMLElement): ElementInfo {
     let analyticsSegments: Array<string> = [];
 
     // We have an 
-    let elementData: {} = {};
+    let elementData: {[key: string]: string} = {};
 
     for (xpathSegments = []; element && element.nodeType == 1; element = element.parentNode as HTMLElement) {
         if (element.hasAttribute("data-analytics")) {
-            const aKey = element.getAttribute("data-analytics-type")
-                ? element.getAttribute("data-analytics-type")
-                : "tag";
-            const aValue = element.getAttribute("data-analytics");
+            const aKey = element.getAttribute("data-analytics-type") || "tag";
+            const aValue = element.getAttribute("data-analytics") || "";
             analyticsSegments.unshift(`${aKey}(${aValue})`);
 
             // [June 22nd 2020]
