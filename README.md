@@ -33,7 +33,7 @@ The usage of these looks a little as follows:
 
 This segment will produce a custom path of `/service(ec2)`
 
-## Data objects
+## elementData
 
 Instead of having to parse data out of the analytic path we also provide an object containing all the data from custom path. For the above example it would look as follows:
 
