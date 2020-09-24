@@ -12,6 +12,12 @@ export interface ElementInfo {
 }
 ```
 
+## Installation
+
+```
+npm install xpath-util
+```
+
 ## xpath
 
 This is the entire xpath from the element to the root element on the page. Elements will be tagged with a class *or** and id if present.
